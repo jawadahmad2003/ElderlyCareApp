@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0D1B2A"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/image_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Medicine Reminder App"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/elder_care"
+                android:drawableEnd="@android:drawable/ic_menu_search"
+                android:hint="What would you like to do?"
+                android:padding="12dp"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/whatsappNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#FFFFFF"
+                android:hint="Send alert"
+                android:textColor="#FFFFFF"
+                android:inputType="phone"
+                android:layout_marginTop="16dp" />
+
+            <EditText
+                android:id="@+id/callNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#FFFFFF"
+                android:hint="Enter Call Number"
+                android:textColor="#FFFFFF"
+                android:inputType="phone"
+                android:layout_marginTop="12dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/sosButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/yellow"
+                    android:text="SOS Button"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/setReminderButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:background="@color/yellow"
+                    android:text="Set Reminder"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/alertMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="350dp"
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            android:text="An emergency alert has been sent. Your emergency contacts have been notified with your current location. Help is on the way."
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/cancel1"
+            android:layout_width="28dp"
+            android:layout_height="19dp"
+            android:layout_marginLeft="330dp"
+            android:layout_marginTop="352dp"
+            android:src="@drawable/cancel"
+            android:visibility="gone" />
+    </FrameLayout>
+</ScrollView>
